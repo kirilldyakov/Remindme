@@ -1,7 +1,7 @@
 package com.example.user.remindme;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import com.example.user.remindme.R;
 
 public class MainActivity extends AppCompatActivity {
-    int LAYOUT = R.layout.activity_main;
+    private static final int LAYOUT = R.layout.activity_main;
 
     private Toolbar toolbar;
 
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(LAYOUT);
         initToolbar();
+        initNavigationView();
     }
 
     private void initToolbar() {
@@ -38,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar.inflateMenu(R.menu.menu);
     }
+
+
+    private void initNavigationView() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+    }
 }
 
 //https://youtu.be/6GXAZupRGlY?list=PLIU76b8Cjem54jkj0XtCAp8JqZooY_eBI&t=428
+//https://youtu.be/k9dStNYqNXg?list=PLIU76b8Cjem54jkj0XtCAp8JqZooY_eBI
