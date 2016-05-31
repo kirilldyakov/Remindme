@@ -3,4 +3,7 @@
     <string name="search_title">Search</string>
     <string name="search">Search</string>
     <string name="menu_item_notification">Напоминание</string>
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
+    <string name="HW">Hello World</string>
 </resources>
